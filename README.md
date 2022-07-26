@@ -8,7 +8,25 @@ Contact: aloe8475@sydney.edu.au
 
 ### Requirements:
 
-Edamame package - Neuromorphic Nanowire Network model compiled by Ruomin Zhu. Email aloe8475@sydney.edu.au for access.
+```
+requirements.txt
 
+(Also need Edamame package - Neuromorphic Nanowire Network model compiled by Ruomin Zhu. Email aloe8475@sydney.edu.au for access)
+```
 
+### Folders:
 
+```
+generate_networks
+```
+Used to create nanowire networks. This can also be done in n-back/Test build networks and patterns.ipynb.
+
+```
+n-back
+```
+Includes jupyter notebook files used to run all major analyses. 
+
+```
+Artemis
+```
+Includes jupyter notebook files used in conjunction with [Artemis HPC](https://www.sydney.edu.au/research/facilities/sydney-informatics-hub/digital-research-infrastructure.html)
