@@ -1,0 +1,11 @@
+bctpy==0.5.2
+gzip
+matplotlib
+matplotlib-inline==0.1.3
+nctpy==0.1.dev0
+networkx
+numpy
+pandas==1.4.1
+pickle
+scipy
+tqdm
