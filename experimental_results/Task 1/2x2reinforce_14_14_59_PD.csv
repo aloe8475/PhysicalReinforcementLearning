@@ -1,0 +1,2 @@
+hamming_dist,globalAccuracy,mix_accuracy,threshold_type,backdegree,commit?,pathway_intersection
+0.4444444444444444,0.8533333333333334,0.7338593974175036,0,2.0,0,1

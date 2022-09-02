@@ -1,0 +1,3 @@
+This is for experimental part of fig 4.for accuracy and threshold evolution. 
+In the experiment there are 200 epochs. 
+The columns with suffix nr_ refer to non reinforcement, and the columns with r are reinforcement 

@@ -1,16 +1,21 @@
-"Created on Thu Jul  1 13:16:32 2021 "
-" @author: gnate "
-# Define some noise functions
+" File used to define supervised learning functions and network visualisation functions"
+
+" @author: Alon Loeffler "
+
+
 import numpy as np
 import pandas as pd
 #Append path to Ruomin's Edamame Package (Nanowire Simulations)
 import sys
-sys.path.append('/import/silo2/aloe8475/Documents/edamame')
+sys.path.append('../../edamame') #point locally to edamame
 from edamame import * 
 
 # -------------------------------
-# Data Creation/Loading Functions 
+# Data Creation/Loading Functions (Not used in this paper)
 # -------------------------------
+
+"Created on Thu Jul  1 13:16:32 2021 "
+" @author: gnate "
 
 def zero_bit_noise(N):
     noise_list = []
@@ -78,7 +83,7 @@ def generate_data(N):
         np.savetxt("3x3image_gen.csv", final_data_matrix.reshape(len(orig_inputs)*int(sum(count_vec)), N+1), delimiter=",")	
     elif N == 25:
         np.savetxt("5x5image_gen.csv", final_data_matrix.reshape(len(orig_inputs)*int(sum(count_vec)), N+1), delimiter=",")
-	
+
  
 def create_target(t):
     target_vector=np.zeros([t.shape[0],3])
@@ -122,11 +127,11 @@ def load_data(N):
     
     # Standardize data - Uncomment to standardize data, not necessary
     # inputs = data - np.mean(data)
-	# inputs = inputs/(np.std(data))"
+    # inputs = inputs/(np.std(data))"
     return inputs, onehot_outputs, sample_num, targets
     
 # ------------------------------
-# Equilibrium/Backprop Functions 
+# Backprop/Supervised Learning Functions 
 # ------------------------------
 
 #Calculate cost function
@@ -286,16 +291,16 @@ def draw_network_state(connectivity,nwState):
     h=nx.draw_networkx_nodes(OGgraph,pos=pos,node_color='grey',node_size=10,ax=ax)
     h.set_zorder(1),
     
-    h2=nx.draw_networkx_edges(G,pos=pos,ax=ax,edge_color=weights,edge_cmap=plt.cm.bwr,edge_vmin=minWeights,edge_vmax=maxWeights)
-#     if h2:,
-#         h2.set_norm(clrs.SymLogNorm(10)),
-#         h2.set_zorder(3),
-    #             if j == 10 and i == 6:,
-    #                 plt.colorbar(h2),
-    nx.draw_networkx_nodes(G,pos=pos,nodelist=sources,node_color='#3f9b0b',node_size=120,node_shape ='*',ax=ax)
-    nx.draw_networkx_nodes(G,pos=pos,nodelist=drain_pool,node_color='r',node_size=120,node_shape ='*',ax=ax)
-    plt.colorbar(h2,label='current',ax=ax)
-    plt.show()
+#     h2=nx.draw_networkx_edges(G,pos=pos,ax=ax,edge_color=weights,edge_cmap=plt.cm.bwr,edge_vmin=minWeights,edge_vmax=maxWeights)
+# #     if h2:,
+# #         h2.set_norm(clrs.SymLogNorm(10)),
+# #         h2.set_zorder(3),
+#     #             if j == 10 and i == 6:,
+#     #                 plt.colorbar(h2),
+#     nx.draw_networkx_nodes(G,pos=pos,nodelist=sources,node_color='#3f9b0b',node_size=120,node_shape ='*',ax=ax)
+#     nx.draw_networkx_nodes(G,pos=pos,nodelist=drain_pool,node_color='r',node_size=120,node_shape ='*',ax=ax)
+#     plt.colorbar(h2,label='current',ax=ax)
+#     plt.show()
 
 
 
