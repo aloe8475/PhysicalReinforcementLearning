@@ -16,6 +16,10 @@ requirements.txt
 ```
 
 ### Folders:
+```
+experimental-results
+```
+.csv files of physical Ag-PVP NWN data.
 
 ```
 generate_networks
