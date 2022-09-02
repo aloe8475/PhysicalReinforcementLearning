@@ -24,7 +24,7 @@ experimental-results
 ```
 generate_networks
 ```
-Used to create nanowire networks. This can also be done in n-back/Test build networks and patterns.ipynb.
+Used to create nanowire networks. 
 
 ```
 n-back
