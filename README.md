@@ -6,10 +6,8 @@ Contact: aloe8475@sydney.edu.au
 
 For all Data files please email above contact. 
 
-----
 
 ### Requirements:
-----
 
 ```
 requirements.txt
@@ -18,7 +16,6 @@ requirements.txt
 ```
 
 ### Folders:
-----
 
 ```
 generate_networks
