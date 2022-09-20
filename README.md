@@ -4,7 +4,8 @@ Authors: Alon Loeffler, Adrian Diaz-Alvarez, Ruomin Zhu, Natesh Ganesh, Mac Shin
 
 Contact: aloe8475@sydney.edu.au
 
-----
+For all Data files please email above contact. 
+
 
 ### Requirements:
 
@@ -15,18 +16,19 @@ requirements.txt
 ```
 
 ### Folders:
+```
+experimental-results
+```
+.csv files of physical Ag-PVP NWN data.
 
 ```
 generate_networks
 ```
-Used to create nanowire networks. This can also be done in n-back/Test build networks and patterns.ipynb.
+Used to create nanowire networks. 
 
 ```
 n-back
 ```
 Includes jupyter notebook files used to run all major analyses. 
+Some simulation data was collected in conjunction with [Artemis HPC](https://www.sydney.edu.au/research/facilities/sydney-informatics-hub/digital-research-infrastructure.html). The scripts used to collect this are very similar to those found here. To access the exact scripts, please email aloe8475@sydney.edu.au
 
-```
-Artemis
-```
-Includes jupyter notebook files used in conjunction with [Artemis HPC](https://www.sydney.edu.au/research/facilities/sydney-informatics-hub/digital-research-infrastructure.html)
